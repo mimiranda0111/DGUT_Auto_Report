@@ -6,7 +6,9 @@ on:
       - main
   schedule:
     - cron: '0 16,20 * * *'
-
+  workflow_dispatch:
+  watch:
+    types: started
 jobs:
   report:
     runs-on: ubuntu-latest
